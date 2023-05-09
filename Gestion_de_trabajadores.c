@@ -152,8 +152,8 @@ void ingresar(empleado empleados[],int empl, FILE* ARCH){
 		if (valFecha == 1){
 			fprintf(ARCH,"%d/%d/%d\t\t", empleados[i].fecha.dia,empleados[i].fecha.mes,empleados[i].fecha.ano);
 		}
-		printf("Salario: ");scanf("%f",&empleados[i].sueldo);
-		fprintf(ARCH," %.3f\t\t ", empleados[i].sueldo);
+		printf("\nSalario: ");scanf("%f",&empleados[i].sueldo);
+		fprintf(ARCH," %.3f\t\t \n\n", empleados[i].sueldo);
 		
 		
 	}
@@ -339,7 +339,6 @@ void consultaPorCi(){
 		fscanf(ARCHConsulta,"%f",&empleados.sueldo);
 	}
 	if(empleados.CI == ci){
-		printf("La CI es: %d \n",empleados.CI);
 		printf("El nombre es: %s \n",empleados.nombre);
 		printf("El apellido es: %s \n",empleados.apellido);
 		printf("El cargo es: %s \n",cargo);
@@ -450,7 +449,7 @@ void contarDepa(int* emple, float* sueldo,char depa[20]){
 	char cargo[20],fecha[20],departa[20];
 	ARCHConsulta=fopen("trabajadores.in","a+");
 	if(ARCHConsulta==NULL){
-		printf("\NO SE ENCONTRO ARCHIVO\N");
+		printf("\nNO SE ENCONTRO ARCHIVO\n");
 		return ;
 	}
 	while(!(feof(ARCHConsulta))){
@@ -496,7 +495,7 @@ void CONSULTAporCARGO(){
 			case GERENTE:
 				contarCargo(&conTrabajadores,&sueldos,"GERENTE");
 				printf("\nPersonal GERENTE: %d\nTotal de sueldo es: %.2f",conTrabajadores,sueldos);
-				fprintf(ARCHcargo,"\nCargo GERENTE: %d\SUELDOS: %.2f",conTrabajadores,sueldos);
+				fprintf(ARCHcargo,"\nCargo GERENTE: %d\nSUELDOS: %.2f",conTrabajadores,sueldos);
 				fprintf(ARCHcargo,"%s","\n==================================\n");
 				conTrabajadores=0;
 				sueldos=0;
@@ -504,7 +503,7 @@ void CONSULTAporCARGO(){
 			case SUPERVISOR:
 				contarCargo(&conTrabajadores,&sueldos,"SUPERVISOR");
 				printf("\nPersonal SUPERVISOR: %d\nTotal de sueldo es: %.2f",conTrabajadores,sueldos);
-				fprintf(ARCHcargo,"\nCargo SUPERVISOR: %d\SUELDOS: %.2f",conTrabajadores,sueldos);
+				fprintf(ARCHcargo,"\nCargo SUPERVISOR: %d\nSUELDOS: %.2f",conTrabajadores,sueldos);
 				fprintf(ARCHcargo,"%s","\n==================================\n");
 				conTrabajadores=0;
 				sueldos=0;
@@ -512,7 +511,7 @@ void CONSULTAporCARGO(){
 			case ANALISTA:
 				contarCargo(&conTrabajadores,&sueldos,"ANALISTA");
 				printf("\nPersonal ANALISTA: %d\nTotal de sueldo es: %.2f",conTrabajadores,sueldos);
-				fprintf(ARCHcargo,"\nCargo ANALISTA: %d\SUELDOS: %.2f",conTrabajadores,sueldos);
+				fprintf(ARCHcargo,"\nCargo ANALISTA: %d\nSUELDOS: %.2f",conTrabajadores,sueldos);
 				fprintf(ARCHcargo,"%s","\n==================================\n");
 				conTrabajadores=0;
 				sueldos=0;
@@ -521,7 +520,7 @@ void CONSULTAporCARGO(){
 			case DISENADOR:
 				contarCargo(&conTrabajadores,&sueldos,"DISENADOR");
 				printf("\nPersonal DISENADOR: %d\nTotal de sueldo es: %.2f",conTrabajadores,sueldos);
-				fprintf(ARCHcargo,"\nCargo DISENADOR: %d\SUELDOS: %.2f",conTrabajadores,sueldos);
+				fprintf(ARCHcargo,"\nCargo DISENADOR: %d\nSUELDOS: %.2f",conTrabajadores,sueldos);
 				fprintf(ARCHcargo,"%s","\n==================================\n");
 				conTrabajadores=0;
 				sueldos=0;
@@ -529,7 +528,7 @@ void CONSULTAporCARGO(){
 			case DESARROLLADOR:
 				contarCargo(&conTrabajadores,&sueldos,"DESARROLLADOR");
 				printf("\nPersonal DESARROLLADOR: %d\nTotal de sueldo es: %.2f",conTrabajadores,sueldos);
-				fprintf(ARCHcargo,"\nCargo DESARROLLADOR: %d\SUELDOS: %.2f",conTrabajadores,sueldos);
+				fprintf(ARCHcargo,"\nCargo DESARROLLADOR: %d\nSUELDOS: %.2f",conTrabajadores,sueldos);
 				fprintf(ARCHcargo,"%s","\n==================================\n");
 				conTrabajadores=0;
 				sueldos=0;
@@ -538,7 +537,7 @@ void CONSULTAporCARGO(){
 			case AUDITOR:
 				contarCargo(&conTrabajadores,&sueldos,"AUDITOR");
 				printf("\nPersonal AUDITOR: %d\nTotal de sueldo es: %.2f",conTrabajadores,sueldos);
-				fprintf(ARCHcargo,"\nCargo AUDITOR: %d\SUELDOS: %.2f",conTrabajadores,sueldos);
+				fprintf(ARCHcargo,"\nCargo AUDITOR: %d\nSUELDOS: %.2f",conTrabajadores,sueldos);
 				fprintf(ARCHcargo,"%s","\n==================================\n");
 				conTrabajadores=0;
 				sueldos=0;

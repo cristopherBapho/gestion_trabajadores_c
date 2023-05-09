@@ -1,0 +1,6 @@
+departamento RRHH: 2 
+sueldos 500.00
+==================================
+departamento CONSULTORIA: 2 
+sueldos 4000.00
+==================================
