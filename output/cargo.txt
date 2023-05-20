@@ -1,9 +1,8 @@
 
-Cargo DISENADOR: 7SUELDOS: 6900.00
+Cargo ANALISTA: 1
+SUELDOS: 870.00
 ==================================
 
-Cargo DISENADOR: 7SUELDOS: 6900.00
-==================================
-
-Cargo SUPERVISOR: 8SUELDOS: 8900.00
+Cargo GERENTE: 2
+SUELDOS: 1600.00
 ==================================

@@ -1,0 +1,4 @@
+322244	ren hoek	Diseno	Disenador	500.000	RENUNCIA	23/4/2334
+332233	diaz perez	Diseno	Disenador	600.000	RENUNCIA	20/5/2023
+7569984	Pedro Diaz	RRHH	Gerente	 1200.000
+OTRO	20/5/2023

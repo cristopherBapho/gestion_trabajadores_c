@@ -1,6 +1,26 @@
+departamento DISENO: 1 
+sueldos 400.00
+departamento PRODUCCION: 0 
+sueldos 0.00
+==================================
+departamento CALIDAD: 0 
+sueldos 0.00
+==================================
 departamento RRHH: 2 
-sueldos 500.00
+sueldos 2070.00
+==================================
+departamento CALIDAD: 2 
+sueldos 1900.00
+==================================
+departamento DISENO: 0 
+sueldos 0.00
 ==================================
 departamento CONSULTORIA: 2 
-sueldos 4000.00
+sueldos 1320.00
+==================================
+departamento PRODUCCION: 3 
+sueldos 2650.00
+==================================
+Departamento CONSULTORIA: 0 
+Total sueldos: 0.00
 ==================================
